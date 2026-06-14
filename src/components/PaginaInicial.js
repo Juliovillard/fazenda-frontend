@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './PaginaInicial.css';
-import { FaWifi, FaCar, FaDog, FaHotTub, FaFire, FaUsers, FaBed, FaUtensils } from 'react-icons/fa';
+import { FaWifi, FaCar, FaDog, FaHotTub, FaFire, FaUtensils } from 'react-icons/fa';
 import { MdWork, MdPool } from 'react-icons/md';
 import { GiWoodCabin, GiBarbecue } from 'react-icons/gi';
 import Lightbox from 'yet-another-react-lightbox';

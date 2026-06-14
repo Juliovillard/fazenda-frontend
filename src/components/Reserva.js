@@ -25,7 +25,7 @@ const Reserva = ({ dadosIniciais }) => {
   const [processando, setProcessando] = useState(false);
   const [erro, setErro] = useState(null);
   const [blockedDates, setBlockedDates] = useState([]);
-  const [priceMap, setPriceMap] = useState({});
+const [, setPriceMap] = useState({});
   const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {

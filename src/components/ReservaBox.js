@@ -10,8 +10,7 @@ const ReservaBox = ({ onReservaClick }) => {
   const [hospedes, setHospedes] = useState(1);
   const [showGuestPicker, setShowGuestPicker] = useState(false);
   const [blockedDates, setBlockedDates] = useState([]);
-  const [priceMap, setPriceMap] = useState({});
-
+const [, setPriceMap] = useState({});
   useEffect(() => {
     const loadBlockedDates = async () => {
       const { blockedDates: dates, priceMap: prices } = await fetchBlockedDates();

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { FaInstagram, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import logo from '../images/Logo.png';
 
 const Footer = ({ onMenuClick }) => {
