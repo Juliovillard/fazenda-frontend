@@ -1,0 +1,222 @@
+.lazer-section {
+  padding: 4rem 2rem;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.lazer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.lazer-title {
+  font-family: 'Olivare', sans-serif;
+  font-size: 2.5rem;
+  color: #00322f;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.lazer-lista {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.lazer-item {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.lazer-item:last-child {
+  border-bottom: none;
+}
+
+.lazer-bullet {
+  font-size: 1.5rem;
+  color: #a8834e;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.lazer-texto {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.lazer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.lazer-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lazer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.lazer-carousel {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.slide-item {
+  outline: none;
+  height: 280px;
+}
+
+.lazer-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.lazer-img:hover {
+  transform: scale(1.05);
+}
+
+.lazer-info {
+  padding: 1.5rem;
+}
+
+.lazer-nome {
+  font-family: 'Olivare', sans-serif;
+  font-size: 1.5rem;
+  color: #00322f;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.lazer-descricao {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-arrow:hover {
+  background-color: #a8834e;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.custom-arrow svg {
+  font-size: 18px;
+  color: #00322f;
+}
+
+.custom-arrow:hover svg {
+  color: white;
+}
+
+.custom-prev {
+  left: 10px;
+}
+
+.custom-next {
+  right: 10px;
+}
+
+.slick-dots {
+  bottom: 15px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: white;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .lazer-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lazer-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .lazer-title {
+    font-size: 2rem;
+  }
+
+  .lazer-lista {
+    padding: 2rem 1.5rem;
+  }
+
+  .lazer-texto {
+    font-size: 1.1rem;
+  }
+
+  .lazer-bullet {
+    margin-right: 1rem;
+  }
+
+  .lazer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .lazer-carousel,
+  .slide-item,
+  .lazer-img {
+    height: 250px;
+  }
+
+  .lazer-nome {
+    font-size: 1.3rem;
+  }
+
+  .custom-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .custom-arrow svg {
+    font-size: 16px;
+  }
+}

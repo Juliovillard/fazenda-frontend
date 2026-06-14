@@ -1,0 +1,121 @@
+@import url('https://fonts.cdnfonts.com/css/roxborough-cf');
+
+.sobre-fazenda-section {
+  padding: 2rem 2rem 4rem;
+  background-color: #ffffff;
+}
+
+.sobre-fazenda-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: stretch;
+}
+
+.sobre-texto {
+  padding-right: 2rem;
+}
+
+.sobre-title {
+  font-family: 'Olivare', sans-serif;
+  font-size: 1rem;
+  color: #A8834E;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sobre-subtitle {
+  font-family: 'Roxborough CF', serif;
+  font-size: 2.5rem;
+  color: #00322f;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.sobre-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  text-align: justify;
+}
+
+.sobre-imagens {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.sobre-imagens .img-principal {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.sobre-imagens-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.sobre-imagens-bottom img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.img-ver-mais {
+  position: relative;
+  cursor: pointer;
+}
+
+.img-ver-mais::after {
+  content: 'Ver todas as fotos';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 50, 47, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.img-ver-mais:hover::after {
+  background-color: rgba(168, 131, 78, 0.9);
+}
+
+@media (max-width: 968px) {
+  .sobre-fazenda-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sobre-texto {
+    padding-right: 0;
+  }
+
+  .sobre-title {
+    font-size: 2rem;
+  }
+
+  .sobre-description {
+    font-size: 1rem;
+  }
+}

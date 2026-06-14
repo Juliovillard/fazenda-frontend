@@ -1,0 +1,467 @@
+.reserva-page {
+  padding: 4rem 1rem;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.reserva-container {
+  max-width: 700px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reserva-title {
+  font-family: 'Olivare', sans-serif;
+  font-size: 2.5rem;
+  color: #00322f;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.reserva-intro {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.etapas-indicador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.etapa-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.etapa-item.etapa-ativa {
+  opacity: 1;
+}
+
+.etapa-numero {
+  width: 40px;
+  height: 40px;
+  background-color: #00322f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.etapa-label {
+  font-size: 0.9rem;
+  color: #00322f;
+  font-weight: 600;
+}
+
+.etapa-linha {
+  width: 80px;
+  height: 2px;
+  background-color: #00322f;
+  opacity: 0.3;
+}
+
+.reserva-form {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  margin-bottom: 2.5rem;
+}
+
+.form-section-title {
+  font-family: 'Olivare', sans-serif;
+  font-size: 1.5rem;
+  color: #00322f;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #00322f;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #a8834e;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.resumo-datas {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f0f7f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.resumo-datas p {
+  margin: 0.5rem 0;
+  color: #00322f;
+  font-weight: 600;
+}
+
+.valor-estimado {
+  font-size: 1.3rem;
+  color: #a8834e;
+}
+
+.btn-continuar,
+.btn-pagar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #00322f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-continuar:hover,
+.btn-pagar:hover {
+  background-color: #004d47;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 50, 47, 0.3);
+}
+
+.btn-pagar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.erro-mensagem {
+  background-color: #fee;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: center;
+  border: 1px solid #fcc;
+}
+
+.pagamento-section {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resumo-pedido {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.resumo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.resumo-item:last-child {
+  border-bottom: none;
+}
+
+.resumo-item span {
+  color: #666;
+}
+
+.resumo-item strong {
+  color: #00322f;
+}
+
+.resumo-total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #00322f;
+  font-size: 1.3rem;
+}
+
+.resumo-total strong {
+  color: #a8834e;
+}
+
+.pagamento-opcoes {
+  text-align: center;
+}
+
+.opcoes-pagamento-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.opcao-pagamento {
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.opcao-pagamento:hover {
+  border-color: #a8834e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(168, 131, 78, 0.2);
+}
+
+.opcao-pagamento h4 {
+  font-family: 'Olivare', sans-serif;
+  font-size: 1.2rem;
+  color: #00322f;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.valor-destaque {
+  font-size: 1.8rem;
+  color: #a8834e;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.descricao-pagamento {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.pagamento-info {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btn-voltar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #00322f;
+  border: 2px solid #00322f;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-voltar:hover {
+  background-color: #00322f;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .reserva-page {
+    padding: 2rem 1rem;
+    width: 100vw;
+  }
+
+  .reserva-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .reserva-title {
+    font-size: 1.5rem;
+    word-break: break-word;
+    padding: 0 0.5rem;
+  }
+
+  .reserva-intro {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+    word-break: break-word;
+  }
+
+  .reserva-form,
+  .pagamento-section {
+    padding: 1.2rem 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .etapas-indicador {
+    gap: 0.3rem;
+  }
+
+  .etapa-numero {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .etapa-label {
+    font-size: 0.7rem;
+  }
+
+  .etapa-linha {
+    width: 25px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section-title {
+    font-size: 1.1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+  }
+
+  .resumo-item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .opcoes-pagamento-info {
+    grid-template-columns: 1fr;
+  }
+
+  .valor-destaque {
+    font-size: 1.3rem;
+  }
+
+  .resumo-pedido {
+    padding: 1rem;
+  }
+
+  .react-datepicker__day {
+    width: 2rem !important;
+    line-height: 2rem !important;
+  }
+
+  .day-price {
+    font-size: 0.45rem;
+  }
+
+  .btn-continuar,
+  .btn-pagar,
+  .btn-voltar {
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+    box-sizing: border-box;
+  }
+}
+
+.datepicker-input {
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.datepicker-input:focus {
+  outline: none;
+  border-color: #a8834e;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__day--disabled {
+  color: #ccc !important;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.day-with-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.day-price {
+  font-size: 0.55rem;
+  color: #a8834e;
+  white-space: nowrap;
+}
+
+.react-datepicker__day--disabled .day-price {
+  color: #ccc;
+}
+
+.react-datepicker__day {
+  width: 2.5rem !important;
+  line-height: 2.5rem !important;
+  height: auto !important;
+  padding: 2px 0;
+}
+
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.cdnfonts.com/css/olivare');
+
+.header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header-scrolled {
+  padding: 0.5rem 2rem;
+}
+
+.header-scrolled .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header-scrolled .fazenda-line1,
+.header-scrolled .fazenda-line2 {
+  font-size: 1.1rem;
+}
+
+.header-scrolled .nav-link {
+  font-size: 0.9rem;
+}
+
+.header-scrolled .btn-reservar {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.logo-section:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.fazenda-name {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Olivare', sans-serif;
+  color: #00322f;
+}
+
+.fazenda-line1,
+.fazenda-line2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #00322f;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: 'Olivare', sans-serif;
+}
+
+.nav-link:hover {
+  color: #A8834E;
+}
+
+.nav-link-active {
+  font-weight: 700;
+  color: #00322f;
+}
+
+.btn-reservar {
+  background-color: #00322f;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Olivare', sans-serif;
+}
+
+.btn-reservar:hover {
+  background-color: #A8834E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 50, 47, 0.3);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #00322f;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 968px) {
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .fazenda-name {
+    display: none;
+  }
+
+  .logo-section {
+    justify-content: center;
+    flex: 1;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6rem 2rem 2rem;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .nav-menu-open {
+    right: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.1rem;
+  }
+
+  .btn-reservar {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0;
+  }
+
+  .fazenda-line1,
+  .fazenda-line2 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,46 @@
+.tarifas-page {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+  min-height: 60vh;
+}
+
+.tarifas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tarifas-container h1 {
+  font-family: 'Olivare', sans-serif;
+  font-size: 2.5rem;
+  color: #00322f;
+  margin-bottom: 2rem;
+}
+
+.tarifas-container h2 {
+  font-family: 'Olivare', sans-serif;
+  font-size: 1.8rem;
+  color: #00322f;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tarifas-container p {
+  font-size: 1.2rem;
+  color: #000;
+  line-height: 1.8;
+}
+
+.tarifas-intro,
+.tarifas-valor,
+.tarifas-pagamento,
+.tarifas-contato {
+  margin-bottom: 2rem;
+}
+
+.valor-destaque {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin: 1rem 0;
+}

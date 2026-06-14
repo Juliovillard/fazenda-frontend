@@ -1,0 +1,66 @@
+.fazenda-section {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+}
+
+.fazenda-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fazenda-title {
+  font-family: 'Olivare', sans-serif;
+  font-size: 3rem;
+  color: #00322f;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.fazenda-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.fazenda-text {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #4a4a4a;
+  font-weight: 400;
+}
+
+.fazenda-text strong {
+  color: #00322f;
+  font-weight: 600;
+}
+
+.fazenda-divider {
+  width: 80px;
+  height: 4px;
+  background-color: #A8834E;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 968px) {
+  .fazenda-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fazenda-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .fazenda-title {
+    font-size: 2rem;
+  }
+
+  .fazenda-text {
+    font-size: 1rem;
+  }
+}

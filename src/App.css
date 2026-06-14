@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.hero-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 2rem;
+}
+
+.botao-comodidades-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background-color: #f2cd99;
+}
+
+.botao-comodidades {
+  padding: 1.2rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: #a8834e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.botao-comodidades:hover {
+  background-color: #00322f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.botao-voltar {
+  margin: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00322f;
+  background-color: white;
+  border: 2px solid #a8834e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #a8834e;
+  color: white;
+}

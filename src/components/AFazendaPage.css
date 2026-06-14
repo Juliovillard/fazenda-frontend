@@ -1,0 +1,214 @@
+.afazenda-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.afazenda-hero {
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #f8f9f7, #ffffff);
+}
+
+.afazenda-hero h1 {
+  font-family: 'Olivare', sans-serif;
+  font-size: 4rem;
+  color: #00322f;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #7a9b98;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.afazenda-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.intro-section {
+  margin-bottom: 4rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.info-section {
+  margin-bottom: 3rem;
+}
+
+.info-section h2 {
+  font-family: 'Olivare', sans-serif;
+  font-size: 2rem;
+  color: #00322f;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.info-lista {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-bullet {
+  font-size: 1.5rem;
+  color: #a8834e;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.info-texto {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.area-section,
+.sede-section,
+.casa-section,
+.suites-section {
+  margin-bottom: 5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.suites-section {
+  border-bottom: none;
+}
+
+.afazenda-container h2 {
+  font-family: 'Olivare', sans-serif;
+  font-size: 2rem;
+  color: #00322f;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.feature-number {
+  display: block;
+  font-size: 2.5rem;
+  color: #00322f;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.feature-label {
+  display: block;
+  font-size: 1rem;
+  color: #7a9b98;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.amenities-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.amenities-list li {
+  font-size: 1.1rem;
+  color: #555;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f8f9f7;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.amenities-list li:hover {
+  background-color: #e8ebe8;
+}
+
+.casa-details {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.casa-details p {
+  font-size: 1.1rem;
+  color: #555;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.6;
+}
+
+.casa-details p:last-child {
+  border-bottom: none;
+}
+
+.suites-text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .afazenda-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amenities-list {
+    grid-template-columns: 1fr;
+  }
+}

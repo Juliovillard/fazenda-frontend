@@ -1,0 +1,293 @@
+.pagina-inicial {
+  background-color: #ffffff;
+}
+
+/* Seção Sobre */
+.sobre-section {
+  padding: 5rem 2rem;
+  background-color: #f8f8f8;
+}
+
+.sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Olivare', sans-serif;
+  font-size: 2.5rem;
+  color: #00322f;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.sobre-descricao {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card-icon {
+  font-size: 3rem;
+  color: #a8834e;
+}
+
+.info-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-card-numero {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00322f;
+  line-height: 1;
+}
+
+.info-card-label {
+  font-size: 1rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* O que temos de melhor */
+.espacos-section {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.espacos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.espacos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.espaco-card {
+  position: relative;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.espaco-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.espaco-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.espaco-card:hover img {
+  transform: scale(1.1);
+}
+
+.espaco-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 2rem 1.5rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.espaco-card-titulo {
+  font-family: 'Olivare', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Estrutura */
+.estrutura-section {
+  padding: 5rem 2rem;
+  background-color: #f2cd99;
+}
+
+.estrutura-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.estrutura-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.estrutura-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+/* Comodidades Home */
+.comodidades-section-home {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.comodidades-container-home {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comodidades-grid-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.comodidade-item-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.comodidade-item-home:hover {
+  background-color: #f2cd99;
+  transform: translateY(-5px);
+}
+
+.comodidade-icon-home {
+  font-size: 2.5rem;
+  color: #a8834e;
+}
+
+.comodidade-nome-home {
+  font-size: 1rem;
+  color: #00322f;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Localização */
+.localizacao-section {
+  padding: 5rem 2rem 0;
+  background-color: #00322f;
+  color: white;
+}
+
+.localizacao-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.localizacao-container .section-title {
+  color: white;
+}
+
+.localizacao-texto {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f2cd99;
+  margin-bottom: 3rem;
+}
+
+.mapa-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .espacos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .sobre-descricao {
+    font-size: 1rem;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .info-card {
+    padding: 1.5rem 2rem;
+  }
+
+  .espacos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .espaco-card {
+    height: 250px;
+  }
+
+  .espaco-card-titulo {
+    font-size: 1.5rem;
+  }
+
+  .comodidades-grid-home {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .estrutura-content p {
+    text-align: left;
+  }
+}
